@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criativos Infinitos</title>
+  <link rel="icon" type="image/png" href="logo/simbolo.png">
+  <link rel="stylesheet" href="index-DHwjG8rQ.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #05070D; /* Dark background matching screenshot */
+      color: white;
+      font-family: 'Inter', sans-serif;
+    }
+    .text-red { color: #4C8DFF; }
+    .text-yellow { color: #8FAEFF; }
+    .bg-red { background-color: #4C8DFF; }
+    .cta-button {
+      background-color: #4C6FFF;
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-size: 1.25rem;
+      box-shadow: 0 0 20px rgba(76, 111, 255, 0.5);
+      transition: all 0.3s ease;
+      display: inline-block;
+      text-decoration: none;
+    }
+    .cta-button:hover {
+      box-shadow: 0 0 40px rgba(76, 111, 255, 0.8);
+      transform: scale(1.05);
+    }
+    .video-placeholder {
+      width: 100%;
+      max-width: 800px;
+      aspect-ratio: 16/9;
+      background: #0A0F19;
+      border: 2px solid #151F3D;
+      border-radius: 12px;
+      margin: 2rem auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .marquee-container {
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100%;
+      padding: 1rem 0;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+    .marquee-content {
+      display: flex;
+      width: max-content;
+      gap: 1rem;
+      animation: scroll 40s linear infinite;
+    }
+    .marquee-content img {
+      height: 300px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(calc(-50% - 0.5rem)); }
+    }
+    .bonus-box {
+      background: #0A0F19;
+      border: 1px solid #151F3D;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body class="flex flex-col items-center w-full overflow-x-hidden">
+
+  <!-- TOP BANNER -->
+  <div class="w-full bg-red text-white text-center py-2 text-sm font-bold tracking-widest flex items-center justify-center gap-2">
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+    ASSISTA AO VÍDEO ATÉ O FINAL — A OFERTA APARECE AO TERMINAR
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+  </div>
+
+  <!-- HEADER / HEADLINE -->
+  <header class="text-center w-full max-w-4xl mx-auto mt-12 px-4 flex flex-col items-center">
+    
+    <!-- PILL -->
+    <div class="border border-[#4C6FFF] rounded-full px-4 py-1 mb-8">
+      <span class="text-red font-bold text-sm tracking-widest">CRIATIVOS INFINITOS</span>
+    </div>
+
+    <h1 class="text-5xl md:text-7xl font-medium mb-6 leading-tight">
+      Criativos <span class="text-red">Infinitos.</span><br>
+      Custo <span class="text-yellow">quase zero.</span><br>
+      Resultado real.
+    </h1>
+    <p class="text-gray-400 text-lg md:text-2xl max-w-3xl mx-auto leading-relaxed mb-12">
+      O método que <strong class="text-white">gestores de tráfego, afiliados e donos de low ticket</strong> estão usando para gerar criativos de alto nível em minutos sem agência, sem designer, sem gastar nada.
+    </p>
+
+    <!-- YELLOW DASHED LINE -->
+    <div class="h-12 border-l-2 border-dashed border-[#8FAEFF] mb-8"></div>
+
+  </header>
+
+  <!-- VIDEO AREA -->
+  <section class="w-full px-4">
+    <div class="video-placeholder">
+      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+    </div>
+  </section>
+
+  <!-- CTA 1 -->
+  <section class="text-center w-full my-8 flex flex-col items-center">
+    
+    <!-- Checkmarks -->
+    <div class="flex flex-wrap justify-center gap-4 md:gap-8 text-sm text-gray-400 mb-12">
+      <div class="flex items-center gap-2"><span class="text-yellow font-bold">✓</span> Sem programação</div>
+      <div class="flex items-center gap-2"><span class="text-yellow font-bold">✓</span> Sem designer</div>
+      <div class="flex items-center gap-2"><span class="text-yellow font-bold">✓</span> 20+ criativos por sessão</div>
+      <div class="flex items-center gap-2"><span class="text-yellow font-bold">✓</span> Funciona para qualquer nicho</div>
+    </div>
+
+    <!-- Pricing Area -->
+    <p class="text-gray-400 text-sm tracking-wider mb-2">Acesso completo • Uso ilimitado</p>
+    <h2 class="text-6xl md:text-7xl font-black text-yellow mb-4" style="letter-spacing: -2px;">12<span class="text-5xl">x</span> de R$5</h2>
+    
+    <div class="flex items-center justify-center gap-3 mb-8 text-gray-300">
+      <span>ou R$47 à vista no Pix</span>
+      <span class="text-gray-600">•</span>
+      <span class="border border-[#8FAEFF] text-yellow text-xs font-bold px-3 py-1 rounded tracking-wider" style="background-color: rgba(143, 174, 255, 0.1);">USO ILIMITADO</span>
+    </div>
+
+    <!-- Button -->
+    <a href="#final-cta" class="cta-button w-full max-w-xl text-center flex items-center justify-center gap-2 text-xl" style="padding: 1.25rem 2rem;">
+      QUERO CRIATIVOS INFINITOS AGORA <span class="ml-2 font-normal">→</span>
+    </a>
+
+    <!-- Sub-button text -->
+    <p class="text-gray-500 text-xs mt-6 mb-8 tracking-widest uppercase">Acesso imediato após o pagamento <span class="mx-2">•</span> Plataforma segura</p>
+
+    <!-- 4 Icons -->
+    <div class="flex flex-wrap justify-center gap-4 md:gap-8 text-xs text-gray-400 mb-12 font-medium">
+      <div class="flex items-center gap-1.5">
+        <svg class="text-yellow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        Compra 100% segura
+      </div>
+      <div class="flex items-center gap-1.5">
+        <svg class="text-yellow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+        Acesso imediato
+      </div>
+      <div class="flex items-center gap-1.5">
+        <svg class="text-yellow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18.178 8c5.096 0 5.096 8 0 8-5.096 0-7.133-8-12.356-8-5.096 0-5.096 8 0 8 5.096 0 7.133-8 12.356-8z"></path></svg>
+        Uso ilimitado
+      </div>
+      <div class="flex items-center gap-1.5">
+        <svg class="text-yellow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle></svg>
+        Para qualquer nicho
+      </div>
+    </div>
+
+    <!-- Atenção Box -->
+    <div class="border border-[#4C6FFF] rounded-lg p-6 max-w-2xl w-full text-gray-300 text-sm" style="background-color: rgba(76, 111, 255, 0.05); border-color: rgba(76, 111, 255, 0.2);">
+      <span class="text-red font-bold">Atenção:</span> este preço é promocional e pode ser alterado sem<br>aviso prévio.
+    </div>
+
+  </section>
+
+  <!-- BÔNUS / TUDO QUE VOCÊ LEVA -->
+  <section class="w-full max-w-4xl mx-auto px-4 my-16 flex flex-col items-center">
+    
+    <!-- PILL -->
+    <div class="rounded px-4 py-1 mb-8" style="background-color: #4C6FFF;">
+      <span class="text-white font-bold text-xs tracking-widest uppercase">BÔNUS EXCLUSIVOS</span>
+    </div>
+
+    <div class="text-center mb-4">
+      <h3 class="text-5xl md:text-6xl font-bold uppercase leading-none mb-1">TUDO QUE VOCÊ</h3>
+      <h3 class="text-5xl md:text-6xl font-bold text-red uppercase leading-none">LEVA JUNTO HOJE.</h3>
+    </div>
+
+    <p class="text-gray-400 text-lg mb-12">Entregáveis incluídos no Criativos Infinitos — sem custo adicional</p>
+
+    <!-- Total Bonus Box -->
+    <div class="border rounded-xl p-6 w-full flex items-center justify-between mb-12" style="background-color: rgba(76, 111, 255, 0.05); border-color: rgba(76, 111, 255, 0.4);">
+      <div>
+        <h4 class="text-red font-bold tracking-wider uppercase mb-1">VALOR TOTAL DOS BÔNUS</h4>
+        <p class="text-gray-400 text-sm">Você recebe tudo abaixo sem pagar a mais</p>
+      </div>
+      <div class="flex items-end">
+        <span class="text-red font-bold text-xl mr-1 mb-1">R$</span>
+        <span class="text-yellow font-black text-5xl leading-none tracking-tighter">355</span>
+      </div>
+    </div>
+
+    <!-- Bonus Items -->
+    <div class="flex flex-col gap-6 w-full">
+      
+      <!-- Item 01 -->
+      <div class="relative overflow-hidden flex flex-col md:flex-row items-start md:items-center p-6 border rounded-xl" style="border-color: #151F3D; background: linear-gradient(90deg, rgba(76,111,255,0.15) 0%, #0A0F19 3%, #0A0F19 100%);">
+        <div class="hidden md:block absolute left-6 text-7xl font-black" style="color: rgba(76, 111, 255, 0.1);">01</div>
+        <div class="md:pl-20 flex-1 z-10 w-full mb-4 md:mb-0">
+          <p class="text-red text-xs font-bold tracking-widest uppercase mb-2">BÔNUS PRINCIPAL</p>
+          <h4 class="text-white text-2xl font-bold mb-2">Gerador Infinito</h4>
+          <p class="text-gray-400 text-sm leading-relaxed max-w-2xl">Crie quantas artes quiser, quando quiser, sem limite. Direto na ferramenta, sem fila, sem custo por peça.</p>
+        </div>
+        <div class="md:text-right z-10 flex flex-col justify-end shrink-0">
+          <p class="text-gray-500 text-xs font-bold tracking-widest mb-1">VALOR</p>
+          <div class="flex items-end md:justify-end">
+            <span class="text-red font-bold text-sm mr-1 mb-1">R$</span>
+            <span class="text-yellow font-black text-3xl leading-none">97</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 02 -->
+      <div class="relative overflow-hidden flex flex-col md:flex-row items-start md:items-center p-6 border rounded-xl" style="border-color: #151F3D; background: linear-gradient(90deg, rgba(76,111,255,0.15) 0%, #0A0F19 3%, #0A0F19 100%);">
+        <div class="hidden md:block absolute left-5 text-7xl font-black" style="color: rgba(76, 111, 255, 0.1);">02</div>
+        <div class="md:pl-20 flex-1 z-10 w-full mb-4 md:mb-0">
+          <p class="text-red text-xs font-bold tracking-widest uppercase mb-2">BÔNUS EXCLUSIVO</p>
+          <h4 class="text-white text-2xl font-bold mb-2">Biblioteca de Prompts</h4>
+          <p class="text-gray-400 text-sm leading-relaxed max-w-2xl">Os melhores prompts já validados para garantir criativos de alta conversão sem precisar pensar no que escrever.</p>
+        </div>
+        <div class="md:text-right z-10 flex flex-col justify-end shrink-0">
+          <p class="text-gray-500 text-xs font-bold tracking-widest mb-1">VALOR</p>
+          <div class="flex items-end md:justify-end">
+            <span class="text-red font-bold text-sm mr-1 mb-1">R$</span>
+            <span class="text-yellow font-black text-3xl leading-none">47</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 03 -->
+      <div class="relative overflow-hidden flex flex-col md:flex-row items-start md:items-center p-6 border rounded-xl" style="border-color: #151F3D; background: linear-gradient(90deg, rgba(76,111,255,0.15) 0%, #0A0F19 3%, #0A0F19 100%);">
+        <div class="hidden md:block absolute left-5 text-7xl font-black" style="color: rgba(76, 111, 255, 0.1);">03</div>
+        <div class="md:pl-20 flex-1 z-10 w-full mb-4 md:mb-0">
+          <p class="text-red text-xs font-bold tracking-widest uppercase mb-2">BÔNUS ESPECIAL</p>
+          <h4 class="text-white text-2xl font-bold mb-2">Mentoria Estratégica</h4>
+          <p class="text-gray-400 text-sm leading-relaxed max-w-2xl">Acesso completo às gravações das nossas mentorias para você escalar seus resultados com as melhores estratégias de tráfego.</p>
+        </div>
+        <div class="md:text-right z-10 flex flex-col justify-end shrink-0">
+          <p class="text-gray-500 text-xs font-bold tracking-widest mb-1">VALOR</p>
+          <div class="flex items-end md:justify-end">
+            <span class="text-red font-bold text-sm mr-1 mb-1">R$</span>
+            <span class="text-yellow font-black text-3xl leading-none">97</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 04 -->
+      <div class="relative overflow-hidden flex flex-col md:flex-row items-start md:items-center p-6 border rounded-xl" style="border-color: #151F3D; background: linear-gradient(90deg, rgba(76,111,255,0.15) 0%, #0A0F19 3%, #0A0F19 100%);">
+        <div class="hidden md:block absolute left-5 text-7xl font-black" style="color: rgba(76, 111, 255, 0.1);">04</div>
+        <div class="md:pl-20 flex-1 z-10 w-full mb-4 md:mb-0">
+          <p class="text-red text-xs font-bold tracking-widest uppercase mb-2">SUPORTE VIP</p>
+          <h4 class="text-white text-2xl font-bold mb-2">Comunidade e Suporte</h4>
+          <p class="text-gray-400 text-sm leading-relaxed max-w-2xl">Não fique travado. Tire dúvidas rápido e compartilhe aprendizados com outros gestores e nossa equipe.</p>
+        </div>
+        <div class="md:text-right z-10 flex flex-col justify-end shrink-0">
+          <p class="text-gray-500 text-xs font-bold tracking-widest mb-1">VALOR</p>
+          <div class="flex items-end md:justify-end">
+            <span class="text-red font-bold text-sm mr-1 mb-1">R$</span>
+            <span class="text-yellow font-black text-3xl leading-none">114</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 05 -->
+      <div class="relative overflow-hidden flex flex-col md:flex-row items-start md:items-center p-6 border rounded-xl" style="border-color: #151F3D; background: linear-gradient(90deg, rgba(76,111,255,0.15) 0%, #0A0F19 3%, #0A0F19 100%);">
+        <div class="hidden md:block absolute left-5 text-7xl font-black" style="color: rgba(76, 111, 255, 0.1);">05</div>
+        <div class="md:pl-20 flex-1 z-10 w-full mb-4 md:mb-0">
+          <p class="text-red text-xs font-bold tracking-widest uppercase mb-2">ACELERADOR</p>
+          <h4 class="text-white text-2xl font-bold mb-2">Biblioteca de Prompts Mestres</h4>
+          <p class="text-gray-400 text-sm leading-relaxed max-w-2xl">Os comandos exatos que usamos para gerar cada tipo de criativo vencedor. Cola, ajusta, gera.</p>
+        </div>
+        <div class="md:text-right z-10 flex flex-col justify-end shrink-0">
+          <p class="text-gray-500 text-xs font-bold tracking-widest mb-1">VALOR</p>
+          <div class="flex items-end md:justify-end">
+            <span class="text-red font-bold text-sm mr-1 mb-1">R$</span>
+            <span class="text-yellow font-black text-3xl leading-none">47</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bonus Summary Footer -->
+    <div class="w-full mt-10 border-t border-gray-800 pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+      <p class="text-gray-400 text-sm max-w-md leading-relaxed">
+        Você recebe <strong class="text-white font-semibold">5 entregáveis</strong> que sozinhos valeriam R$355 e leva tudo incluso, sem pagar a mais por nenhum deles.
+      </p>
+      <div class="text-right w-full md:w-auto flex flex-col items-end">
+        <p class="text-gray-500 text-sm line-through mb-1">De R$355,00</p>
+        <p class="text-red font-bold text-xs tracking-widest uppercase mb-1">INCLUÍDO NO SEU ACESSO</p>
+        <div class="flex items-end">
+          <span class="text-red font-bold text-xl mr-1 mb-1">R$</span>
+          <span class="text-yellow font-black text-5xl leading-none tracking-tighter">0</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION 1 -->
+  <section class="w-full text-center my-12 mt-20">
+    <h3 class="text-4xl md:text-5xl font-black mb-4 uppercase" style="letter-spacing: -1px;">CRIATIVOS PARA <span class="text-yellow" style="text-shadow: 0 0 30px rgba(143,174,255,0.4);">TODO NICHO.</span></h3>
+    <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10">Fitness, finanças, educação, SaaS o método se adapta a qualquer produto digital.</p>
+    <div class="marquee-container">
+      <div class="marquee-content">
+        <!-- Set 1 -->
+        <img src="img1-C84mKUbE.webp" alt="Criativo 1">
+        <img src="img2-CzqBnXcz.webp" alt="Criativo 2">
+        <img src="img3-MyFXZqtf.webp" alt="Criativo 3">
+        <img src="img4-Cg202YRn.webp" alt="Criativo 4">
+        <img src="img5-BQ-rQ0W4.webp" alt="Criativo 5">
+        <img src="img6-CdJmQlm6.webp" alt="Criativo 6">
+        <img src="img7-cRksZmZo.webp" alt="Criativo 7">
+        <img src="img8-Cx5Qlid6.webp" alt="Criativo 8">
+        <img src="img9-B5QArgow.webp" alt="Criativo 9">
+        <img src="img10-AdnlV3OB.webp" alt="Criativo 10">
+        <!-- Set 2 -->
+        <img src="img1-C84mKUbE.webp" alt="Criativo 1">
+        <img src="img2-CzqBnXcz.webp" alt="Criativo 2">
+        <img src="img3-MyFXZqtf.webp" alt="Criativo 3">
+        <img src="img4-Cg202YRn.webp" alt="Criativo 4">
+        <img src="img5-BQ-rQ0W4.webp" alt="Criativo 5">
+        <img src="img6-CdJmQlm6.webp" alt="Criativo 6">
+        <img src="img7-cRksZmZo.webp" alt="Criativo 7">
+        <img src="img8-Cx5Qlid6.webp" alt="Criativo 8">
+        <img src="img9-B5QArgow.webp" alt="Criativo 9">
+        <img src="img10-AdnlV3OB.webp" alt="Criativo 10">
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION 2 -->
+  <section class="w-full text-center my-12 mt-20">
+    <h3 class="text-4xl md:text-5xl font-black mb-4 uppercase" style="letter-spacing: -1px;">QUALIDADE DE <span class="text-yellow" style="text-shadow: 0 0 30px rgba(143,174,255,0.4);">AGÊNCIA.</span></h3>
+    <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10">Sem contratar designer. Sem esperar dias. Resultados profissionais em minutos.</p>
+    <div class="marquee-container">
+      <div class="marquee-content" style="animation-direction: reverse;">
+        <!-- Set 1 -->
+        <img src="qa-1-Bkup7oqo.webp" alt="Criativo QA 1">
+        <img src="qa-2-DE0FLS84.webp" alt="Criativo QA 2">
+        <img src="qa-3-CX0MiN0s.webp" alt="Criativo QA 3">
+        <img src="qa-4-DRyfMRRy.webp" alt="Criativo QA 4">
+        <img src="qa-5-B8CLa_yf.webp" alt="Criativo QA 5">
+        <img src="qa-6-DYdNk-7d.webp" alt="Criativo QA 6">
+        <img src="qa-7-DXUH-6pR.webp" alt="Criativo QA 7">
+        <img src="qa-8-CTPmlJPa.webp" alt="Criativo QA 8">
+        <img src="qa-9-BONw9Ky1.webp" alt="Criativo QA 9">
+        <img src="qa-10-yrRDAW-R.webp" alt="Criativo QA 10">
+        <!-- Set 2 -->
+        <img src="qa-1-Bkup7oqo.webp" alt="Criativo QA 1">
+        <img src="qa-2-DE0FLS84.webp" alt="Criativo QA 2">
+        <img src="qa-3-CX0MiN0s.webp" alt="Criativo QA 3">
+        <img src="qa-4-DRyfMRRy.webp" alt="Criativo QA 4">
+        <img src="qa-5-B8CLa_yf.webp" alt="Criativo QA 5">
+        <img src="qa-6-DYdNk-7d.webp" alt="Criativo QA 6">
+        <img src="qa-7-DXUH-6pR.webp" alt="Criativo QA 7">
+        <img src="qa-8-CTPmlJPa.webp" alt="Criativo QA 8">
+        <img src="qa-9-BONw9Ky1.webp" alt="Criativo QA 9">
+        <img src="qa-10-yrRDAW-R.webp" alt="Criativo QA 10">
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION 3 -->
+  <section class="w-full text-center my-12 mt-20">
+    <h3 class="text-4xl md:text-5xl font-black mb-4 uppercase" style="letter-spacing: -1px;">VOLUME QUE <span class="text-yellow" style="text-shadow: 0 0 30px rgba(143,174,255,0.4);">ESCALA.</span></h3>
+    <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10">Teste 10, 20, 30 criativos por semana. Encontre o vencedor mais rápido que qualquer concorrente.</p>
+    <div class="marquee-container">
+      <div class="marquee-content">
+        <!-- Set 1 -->
+        <img src="s3-1-B82iXypZ.webp" alt="Criativo S3 1">
+        <img src="s3-2-Qr0HBDSD.webp" alt="Criativo S3 2">
+        <img src="s3-3-CuKUDahy.webp" alt="Criativo S3 3">
+        <img src="s3-4-By2DoQI_.webp" alt="Criativo S3 4">
+        <img src="s3-5-BQgka9-B.webp" alt="Criativo S3 5">
+        <img src="s3-6-CKGUT16D.webp" alt="Criativo S3 6">
+        <img src="s3-7-lcAeSfNG.webp" alt="Criativo S3 7">
+        <img src="s3-8-SM0Ux0BI.webp" alt="Criativo S3 8">
+        <img src="s3-9-B-KaHc8w.webp" alt="Criativo S3 9">
+        <img src="s3-10-BrBkMilC.webp" alt="Criativo S3 10">
+        <!-- Set 2 -->
+        <img src="s3-1-B82iXypZ.webp" alt="Criativo S3 1">
+        <img src="s3-2-Qr0HBDSD.webp" alt="Criativo S3 2">
+        <img src="s3-3-CuKUDahy.webp" alt="Criativo S3 3">
+        <img src="s3-4-By2DoQI_.webp" alt="Criativo S3 4">
+        <img src="s3-5-BQgka9-B.webp" alt="Criativo S3 5">
+        <img src="s3-6-CKGUT16D.webp" alt="Criativo S3 6">
+        <img src="s3-7-lcAeSfNG.webp" alt="Criativo S3 7">
+        <img src="s3-8-SM0Ux0BI.webp" alt="Criativo S3 8">
+        <img src="s3-9-B-KaHc8w.webp" alt="Criativo S3 9">
+        <img src="s3-10-BrBkMilC.webp" alt="Criativo S3 10">
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section id="final-cta" class="text-center w-full mt-24 mb-16 flex flex-col items-center">
+    <h3 class="text-4xl md:text-5xl font-medium mb-2">Chega de esperar criativo.</h3>
+    <h3 class="text-4xl md:text-5xl font-medium text-red mb-12">Comece a gerar agora.</h3>
+    
+    <!-- Pricing Area -->
+    <p class="text-gray-400 text-sm tracking-wider mb-2">Acesso completo • Uso ilimitado</p>
+    <h2 class="text-6xl md:text-7xl font-black text-yellow mb-4" style="letter-spacing: -2px;">12<span class="text-5xl">x</span> de R$5</h2>
+    
+    <div class="flex items-center justify-center gap-3 mb-8 text-gray-300">
+      <span>ou R$47 à vista no Pix</span>
+      <span class="text-gray-600">•</span>
+      <span class="border border-[#8FAEFF] text-yellow text-xs font-bold px-3 py-1 rounded tracking-wider" style="background-color: rgba(143, 174, 255, 0.1);">USO ILIMITADO</span>
+    </div>
+
+    <!-- Button -->
+    <a href="https://pay.cakto.com.br/5ejbvv2_1086186" class="cta-button w-full max-w-xl text-center flex items-center justify-center gap-2 text-xl" style="padding: 1.25rem 2rem;">
+      QUERO CRIATIVOS INFINITOS AGORA <span class="ml-2 font-normal">→</span>
+    </a>
+
+    <!-- Sub-button text -->
+    <p class="text-gray-500 text-xs mt-6 mb-8 tracking-widest uppercase">Acesso imediato após o pagamento <span class="mx-2">•</span> Plataforma segura</p>
+
+    <!-- 4 Icons -->
+    <div class="flex flex-wrap justify-center gap-4 md:gap-8 text-xs text-gray-400 mb-16 font-medium">
+      <div class="flex items-center gap-1.5">
+        <svg class="text-yellow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        Compra 100% segura
+      </div>
+      <div class="flex items-center gap-1.5">
+        <svg class="text-yellow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+        Acesso imediato
+      </div>
+      <div class="flex items-center gap-1.5">
+        <svg class="text-yellow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18.178 8c5.096 0 5.096 8 0 8-5.096 0-7.133-8-12.356-8-5.096 0-5.096 8 0 8 5.096 0 7.133-8 12.356-8z"></path></svg>
+        Uso ilimitado
+      </div>
+      <div class="flex items-center gap-1.5">
+        <svg class="text-yellow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle></svg>
+        Para qualquer nicho
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="w-full text-center border-t border-gray-800 py-12 px-4 flex flex-col items-center">
+    <img src="logo/logotipo-bg-escuro.png" alt="Logotipo" class="mx-auto mb-8 h-7 w-auto opacity-70">
+    <p class="text-gray-500 text-xs tracking-widest uppercase mb-4">CRIATIVOS INFINITOS <span class="mx-2">•</span> Todos os direitos reservados</p>
+    <p class="text-gray-500 text-xs mb-4">Este site não é afiliado ao Facebook ou Google. Os resultados apresentados não garantem resultados futuros.</p>
+    <p class="text-gray-500 text-xs font-bold">Dúvidas? <a href="mailto:crieai.ia@gmail.com" class="text-yellow hover:underline">crieai.ia@gmail.com</a></p>
+  </footer>
+
+</body>
+</html>
