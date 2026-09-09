@@ -458,6 +458,48 @@
     <p class="text-gray-500 text-xs font-bold">Dúvidas? <a href="mailto:crieai.ia@gmail.com" class="text-yellow hover:underline">crieai.ia@gmail.com</a></p>
   </footer>
 
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2988244568177170');
+  fbq('track', 'PageView'); // Evento Page View no carregamento
+
+  // Evento View Content ao rolar 90% da página
+  let scrollTracked = false;
+  window.addEventListener('scroll', function() {
+    if (scrollTracked) return;
+    const scrollTop = window.scrollY;
+    const docHeight = document.body.scrollHeight;
+    const winHeight = window.innerHeight;
+    const scrollPercent = scrollTop / (docHeight - winHeight);
+    
+    if (scrollPercent >= 0.9) {
+      fbq('track', 'ViewContent');
+      scrollTracked = true;
+    }
+  });
+
+  // Evento AddToCart ao clicar nos botões CTA
+  document.addEventListener('DOMContentLoaded', function() {
+    const ctaButtons = document.querySelectorAll('.cta-button');
+    ctaButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        fbq('track', 'AddToCart');
+      });
+    });
+  });
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2988244568177170&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
 </body>
 </html>
 < ! - -   T e s t e   d e   s i n c r o n i z a c a o   - - >  
