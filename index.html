@@ -118,8 +118,25 @@
 
   <!-- VIDEO AREA -->
   <section class="w-full px-4">
-    <div class="video-placeholder">
-      <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+    <div class="w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl relative" style="background-color: #0A0F19; border: 2px solid #151F3D;">
+      <video id="vsl-video" class="w-full block cursor-pointer" playsinline preload="auto">
+        <source src="assets/video.mp4" type="video/mp4">
+      </video>
+      <div id="video-start-overlay" class="absolute inset-0 flex flex-col items-center justify-center cursor-pointer bg-black/60 backdrop-blur-sm z-20">
+        <div class="w-20 h-20 bg-[#4C6FFF] rounded-full flex items-center justify-center mb-4 shadow-[0_0_20px_rgba(76,111,255,0.6)] animate-pulse">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+        </div>
+        <p class="text-xl md:text-2xl font-bold text-white uppercase tracking-wider drop-shadow-md text-center px-4">Clique para ver a plataforma</p>
+      </div>
+      <div id="video-pause-overlay" class="absolute inset-0 flex flex-col items-center justify-center cursor-pointer bg-black/80 backdrop-blur-sm z-10 hidden">
+        <div class="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+        </div>
+        <p class="text-lg md:text-xl font-bold text-white text-center px-6 max-w-md">Termine de ver o vídeo, você irá entender porque ela vai te ajudar.</p>
+      </div>
+      <div class="absolute bottom-0 left-0 w-full h-2 bg-gray-800 z-30 opacity-80">
+        <div id="fake-progress" class="h-full bg-red-600" style="width: 0%; transition: width 0.5s linear;"></div>
+      </div>
     </div>
   </section>
 
@@ -134,8 +151,10 @@
       <div class="flex items-center gap-2"><span class="text-yellow font-bold">✓</span> Funciona para qualquer nicho</div>
     </div>
 
-    <!-- Pricing Area -->
-    <p class="text-gray-400 text-sm tracking-wider mb-2">Acesso completo • Uso ilimitado</p>
+    <!-- DELAYED CONTENT (Hidden by default) -->
+    <div id="vsl-content" class="w-full flex flex-col items-center" style="display: none;">
+      <!-- Pricing Area -->
+      <p class="text-gray-400 text-sm tracking-wider mb-2">Acesso completo • Uso ilimitado</p>
     <h2 class="text-6xl md:text-7xl font-black text-yellow mb-4" style="letter-spacing: -2px;">12<span class="text-5xl">x</span> de R$5</h2>
     
     <div class="flex items-center justify-center gap-3 mb-8 text-gray-300">
@@ -460,6 +479,70 @@
     <p class="text-gray-500 text-xs mb-4">Este site não é afiliado ao Facebook ou Google. Os resultados apresentados não garantem resultados futuros.</p>
     <p class="text-gray-500 text-xs font-bold">Dúvidas? <a href="mailto:crieai.ia@gmail.com" class="text-yellow hover:underline">crieai.ia@gmail.com</a></p>
   </footer>
+  </div> <!-- END VSL CONTENT -->
+
+  <!-- VSL Logic -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const video = document.getElementById('vsl-video');
+      const startOverlay = document.getElementById('video-start-overlay');
+      const pauseOverlay = document.getElementById('video-pause-overlay');
+      const progressBar = document.getElementById('fake-progress');
+      const vslContent = document.getElementById('vsl-content');
+      
+      let hasStarted = false;
+      let contentRevealed = false;
+
+      // Remove default controls to be safe
+      video.controls = false;
+
+      // Click to start
+      startOverlay.addEventListener('click', () => {
+        startOverlay.classList.add('hidden');
+        video.play();
+        hasStarted = true;
+      });
+
+      // Click video to pause/play
+      video.addEventListener('click', () => {
+        if (!hasStarted) return;
+        if (video.paused) {
+          video.play();
+          pauseOverlay.classList.add('hidden');
+        } else {
+          video.pause();
+          pauseOverlay.classList.remove('hidden');
+        }
+      });
+
+      // Click pause overlay to resume
+      pauseOverlay.addEventListener('click', () => {
+        video.play();
+        pauseOverlay.classList.add('hidden');
+      });
+
+      // Update progress bar and check for 90%
+      video.addEventListener('timeupdate', () => {
+        if (!video.duration) return;
+        
+        const percentage = (video.currentTime / video.duration) * 100;
+        
+        // Easing the progress bar: starts fast, slows down at the end.
+        // fakePercent = 100 - (100 - realPercent)^2 / 100
+        const fakePercentage = 100 - (Math.pow(100 - percentage, 2) / 100);
+        progressBar.style.width = fakePercentage + '%';
+
+        // Reveal content at 90%
+        if (percentage >= 90 && !contentRevealed) {
+          vslContent.style.display = 'flex';
+          contentRevealed = true;
+        }
+      });
+      
+      // Prevent context menu
+      video.addEventListener('contextmenu', e => e.preventDefault());
+    });
+  </script>
 
   <!-- Meta Pixel Code -->
   <script>
