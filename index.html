@@ -11,6 +11,8 @@
       scroll-behavior: smooth;
     }
     body {
+      user-select: none;
+      -webkit-user-select: none;
       background-color: #05070D; /* Dark background matching screenshot */
       color: white;
       font-family: 'Inter', sans-serif;
@@ -542,8 +544,17 @@
         }
       });
       
-      // Prevent context menu
-      video.addEventListener('contextmenu', e => e.preventDefault());
+      // Prevent context menu & DevTools
+      document.addEventListener('contextmenu', e => e.preventDefault());
+      document.addEventListener('dragstart', e => e.preventDefault());
+      document.addEventListener('keydown', e => {
+        // F12
+        if (e.key === 'F12' || e.keyCode === 123) e.preventDefault();
+        // Ctrl+Shift+I/J/C
+        if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i' || e.key === 'J' || e.key === 'j' || e.key === 'C' || e.key === 'c')) e.preventDefault();
+        // Ctrl+U (Source) / Ctrl+S (Save)
+        if (e.ctrlKey && (e.key === 'U' || e.key === 'u' || e.key === 'S' || e.key === 's')) e.preventDefault();
+      });
     });
   </script>
 
